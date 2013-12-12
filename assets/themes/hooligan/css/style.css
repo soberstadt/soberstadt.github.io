@@ -409,3 +409,11 @@ div.sidebar section img.icon {
   -o-border-radius: 5px;
   border-radius: 5px;
 }
+
+.gist {
+  text-shadow: none;
+}
+
+strong {
+  color: #9d9d9d;
+}
