@@ -24,7 +24,19 @@ You might ask: “Why use an AsyncTask?” The big difference is for the user. W
 
 This is where you are going to have to change things. This php file is set up to access a MySQL table and check if the user email and password match those inside the DB.
 
+{% gist soberstadt/d92305d0cac5fdca497d %}
 
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69
+### Step 2: LoginActivity.java
 
+Every Android developer knows Activities but one thing important here is are the last two methods which are called by the AsyncTask to change the UI.
 
+{% gist soberstadt/a4e2dd7c6857a562d98a %}
+
+### Step 3: LoginTask.java
+
+Here we have a class that extends the AsyncTask class which will run behind the scenes and talk to the server while you keep your user engaged with a cool progress bar/wheel. The important parameter “activity” of type LoginActivity allows you to call its methods login and showLoginError.
+
+{% gist soberstadt/f70154c6f56a72ae97dc %}
+
+   [1]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html
+   [2]: http://developer.android.com/reference/android/os/AsyncTask.html

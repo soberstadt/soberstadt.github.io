@@ -9,7 +9,8 @@ tags:
   - Extentions
   - Google Chrome
 ---
-![][1]For starters, yes, I am a Google fan-boy. However, if you don’t use Chrome, I’m sure that most of these are available for Firefox. If you used Safari or Internet Explorer, its time to move on. [Chrome][2] lets your sync extensions across different computers, which changes the game massively.
+![http://www.google.com/intl/en/images/logos/chrome_logo.gif][1]  
+For starters, yes, I am a Google fan-boy. However, if you don’t use Chrome, I’m sure that most of these are available for Firefox. If you used Safari or Internet Explorer, its time to move on. [Chrome][2] lets your sync extensions across different computers, which changes the game massively.
 
 There are a lot of great extensions out there, but today I was realizing that I love some of the extensions I have and I hope that anyone who reads this will also love them.
 
