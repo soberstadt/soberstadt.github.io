@@ -1,100 +1,316 @@
-<!doctype html>
-<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
-<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>256Design - portfolio for Spencer Oberstadt</title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="pics/logo.ico">
+    <link href='http://fonts.googleapis.com/css?family=Cuprum:400,700' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='css/soberstadt.min.css'>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-6831251-2']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = 'http://www.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="container_12" id="main_body">
+      <header class="container_12">
+        <img src="pics/logo.png" id="logo" class="grid_3" />
+        <h1 class="grid_9"><span class="line1">256 Design</span>
+        <span class="line2">Portfolio For</span>
+        <span class="line3">Spencer Oberstadt</span></h1>
+      </header>
 
-  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
-  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="javascripts/script.js"></script>
-
-  <title>256 Design</title>
-  <meta name="description" content="">
-
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-
-</head>
-
-<body>
-
-  <div class="wrapper">
-    <header>
-      <h1 class="title">256 Design</h1>
-    </header>
-    <div id="container">
-      <p class="tagline"></p>
-      <div id="main" role="main">
-        <div class="download-bar">
-        <div class="inner">
-          <a href="https://github.com/soberstadt" class="code">View 256 Design on GitHub</a>
+      <div class="container_12">
+        <div class="grid_4">
+          <h2>Blog</h2>
+          <p>I write some things sometimes. There aren't a lot of things that I 
+            find out myself, but I want to put those few things out there. I 
+            encourage you to check it out, maybe bookmark some of the posts if 
+            they are something you work with.</p>
+          <p><a href="http://blog.256design.com">> 256 Blog</a><p>
         </div>
-        <span class="blc"></span><span class="trc"></span>
+        <div class="grid_4">
+          <p>Programming isn't just a job, it's a mindset. I am passionate 
+            about finding different ways to look at a system or process. The 
+            trendy technology and tools are important, and exciting, but you 
+            don't always use your brand new stud finder to fix the kitchen sink. 
+            Anyone can make a new Facebook or blog site, but what gets me coming 
+            back to a project is if it actually helps real people.</p>
         </div>
-        <article class="markdown-body">
-          <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+        <div class="grid_4">
+          <h2>Contact Me</h2>
+          <p class="contact_me_body">
+            <a href="resume.pdf">My Resume</a>
+            <a href="#" class="email_me">Email Me</a>
+            <a href="http://twitter.com/soberstadt">@soberstadt</a>
+            <a href="http://github.com/soberstadt">github.com/soberstadt</a>
+            <a href="http://careers.stackoverflow.com/soberstadt">Stack Overflow Careers</a>
+            <a href="http://linkedin.com/in/sobestadt">LinkedIn</a>
+          </p>
+        </div>
+      </div>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+      <div class="container_12" id="filters_container">
+        <h3 class="grid_12">Filters</h3>
+        
+        <div class="grid_3">
+          <h4>Coolness</h4>
+          <input type="range" min="1" max="10" steps="1" value="1" 
+                 id="coolness_filter_input"
+                 name="coolness_filter_input"
+                 onchange="coolness_slider_change(event)" />
+          <span id="coolness_slider_value" class="value">Any</span>
+        </div>
+        <div class="grid_3">
+          <h4>Type</h4>
+          <input id="developement_filter_cb" type="checkbox" value="development" checked />
+          <label for="developement_filter_cb">Development</label> 
+          <input id="design_filter_cb" type="checkbox" value="design" checked />
+          <label for="design_filter_cb">Design</label> 
+        </div>
+      </div>
+      <hr id="portfolio">
+      <article class="grid_4" type="development" coolness="10" open="true" id="p1">
+        <a href="#mpdx" class="fancybox wrapper">
+          <img src="pics/port/mpdx-mobile-small.jpg">
+          <h5>MPDX - Mobile</h5>
+          <span class="date">June 2012 - Current</span>
+          <span class="coolness">Coolness: 10</span>
+          <span class="main_tech">Main Technology: HTML/CSS/JS</span>
+          <span class="more_link">Click Again To See More</span>
+        </a>
+      </article>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+      <article class="grid_4" type="development" coolness="8">
+        <a href="#progTransp" class="fancybox wrapper">
+          <img src="pics/port/pt-small.jpg">
+          <h5>Project Tansparency</h5>
+          <span class="date">September 2011 - Current</span>
+          <span class="coolness">Coolness: 8</span>
+          <span class="main_tech">Main Technology: Java for Android</span>
+          <span class="more_link">Click Again To See More</span>
+        </a>
+      </article>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+      <article class="grid_4" type="design" coolness="5">
+        <a href="#ARProject" class="fancybox wrapper">
+          <img src="pics/port/ar-small.jpg">
+          <h5>Mobile Enviornment Detection</h5>
+          <span class="date">November 2011</span>
+          <span class="coolness">Coolness: 5</span>
+          <span class="more_link">Click Again To See More</span>
+        </a>
+      </article>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+      <article class="grid_4" type="development" coolness="6">
+        <a href="#autismProject" class="fancybox wrapper">
+          <img src="pics/port/autism-small.jpg">
+          <h5>Data Entry App for Autism Therapy</h5>
+          <span class="date">July 2011 - November 2011</span>
+          <span class="coolness">Coolness: 8</span>
+          <span class="main_tech">Main Technology: Adobe Flex</span>
+          <span class="more_link">Click Again To See More</span>
+        </a>
+      </article>
+      <hr class="clear_hr">
+      <footer class="grid_12">
+        <p>See (or Fork) the <a href="https://github.com/soberstadt/soberstadt.github.com">source</a> for this site on Github.</p>
+        <p>Spencer Oberstadt - <a href="https://twitter.com/search?q=%23nerdlife">#nerdLife</a></p>
+      </footer>
+    </div>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-        </article>
+    <div style="display:none" id="mpdx" class="project_large">
+      <h2>MPDX - Mobile</h2>
+      <h3 class="sub-title">Ministy Partner Development Connexion</h3>
+      <img src="pics/port/mpdx_large.jpg" />
+      <p>In June 2012, I traveled to Orlando, FL and worked with a team on to
+        build a mobile access portal for MPDX.org. MPDX is being designed as the
+        new web application solution for missionaries who raise their own 
+        financial support. My role was leading the mobile apps team where I 
+        worked with another member to train him in javascript development and 
+        project management. We built the apps using Phonegap and are currently 
+        targeting Android and iOS devices with offline applications and is also
+        accessible via the web. We chose PhoneGap because we wanted a fast 
+        start-up time and the oppertunity to target any smart phone.</p>
+      <p>To start off the first week of the project, we worked to explore dynamic 
+        view (HTML page) creation techniques and other tools we would need to 
+        develop for a PhoneGap application. After becoming aquated with our new tool set, we made <a href="http://lumzy.com/access/?id=8A41BC96258426AE2EE006865AAE99A5" target="_blank">wireframes</a> 
+        to lay out some of the basic features we wanted on the different views. 
+        After about a week of development, to help streamline development and 
+        expansion, we looked into Javascript MVC 
+        (<a href="http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller" target="_blank">more info</a>) 
+        frameworks and decided on using Backbone.js. After getting the hang of 
+        Backbone.js, we were cooking with gas and had a published app on the Play
+        Store after about 2.5 months, with the last month me working solo.</p>
+      <p>During the first 2 months, we used a white board in the department to 
+        make an extensive to-do list with each section of the app. As we 
+        transitioned out of pair-programming, the remaining tasks were transfered 
+        to the <a href="https://github.com/CruGlobal/mpdx-mobile/issues" target="_blank">Github issues page</a> 
+        as the project approached it's beta releases. Now you can track the 
+        current code base on the 
+        <a href="https://github.com/CruGlobal/mpdx-mobile" target="_blank">Github repo</a>.</p>
+      <p>The app is currently available on the 
+        <a href="https://play.google.com/store/apps/details?id=org.mpdx" target="_blank">Android Play Store</a> 
+        and the <a href="https://itunes.apple.com/us/app/mpdx/id571838934" target="_blank">Apple App Store</a>!</p>
+      <div class="container_12 more_info">
+        <div class="tags grid_3">
+          <h4>Tags</h4>
+          <ul>
+            <li>PhoneGap</li>
+            <li>HTML5/CSS3</li>
+            <li>jQuery, jQuery Mobile</li>
+            <li>Backbone</li>
+            <li>Git</li>
+            <li>JSON</li>
+          </ul>
+        </div>
+        <div class="links grid_3">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="http://mpdx.org" target="_blank">MPDX.org</a></li>
+            <li><a href="http://lumzy.com/access/?id=8A41BC96258426AE2EE006865AAE99A5" target="_blank">Wireframes</a></li>
+          </ul>
+        </div>
+        <div class="grid_3">
+          <h4>Client</h4>
+          <p>Cru (formally Campus Crusade for Christ)
+        </div>
+        <div class="grid_3">
+          <h4>Time Frame</h4>
+          <p>June 2012 - Current</p>
+        </div>
+        <div class="grid_3">
+          <h4>Coolness</h4>
+          <p>10</p>
+        </div>
       </div>
     </div>
-    <footer>
-      <div class="owner">
 
-      <p><a href="https://github.com/soberstadt" class="avatar"><img src="https://2.gravatar.com/avatar/33e1af17938a5911d916a0d3d42e1835?d=https%3A%2F%2Fidenticons.github.com%2F6bd769ee71003ba13410733901f01082.png&amp;r=x&amp;s=60" width="48" height="48"/></a>View <a href="https://github.com/soberstadt">soberstadt</a> on <a href="https://www.github.com">GitHub</a></p>
+    <div style="display:none" id="progTransp" class="project_large">
+      <h2>Project Transparency</h2>
+      <h3 class="sub-title">Accountability Utility</h3>
+      <p>Project Transparency was built with the vision of sharing daily updates 
+        how you are doing to your accountability partners. I built the 
+        application with Java for Android and have hopes of supporting other
+        platforms as well. For a back end, php was the weapon of choice connected
+        to a MySQL server.</p>
+      <p>All of the code for Project Transparency is availalbe on GitHub. Check 
+        out the <a href="https://github.com/256Design/Project-Transperancy" target="_blank">Android Code</a> 
+        and the <a href="https://github.com/256Design/PT-Server" target="_blank">Server Side</a>.
+      <p><a href="https://play.google.com/store/apps/details?id=com.twofivesix.pt" target="_blank">Available on the Google Play Store</a></p>
+      <div class="container_12 more_info">
+        <div class="tags grid_3">
+          <h4>Tags</h4>
+          <ul>
+            <li>Java</li>
+            <li>Android</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+            <li>Git</li>
+            <li>JSON</li>
+          </ul>
+        </div>
+        <div class="grid_3">
+          <h4>Time Frame</h4>
+          <p>September 2011 - Current</p>
+        </div>
+        <div class="grid_3">
+          <h4>Coolness</h4>
+          <p>8</p>
+        </div>
+      </div> 
+    </div>
 
-      </div>
-      <div class="creds">
-        <small>This page generated using <a href="http://pages.github.com/">GitHub Pages</a><br/>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
-      </div>
-    </footer>
-  </div>
-  <div class="current-section">
-    <a href="#top">Scroll to top</a>
-    <a href="https://github.com/soberstadt/soberstadt.github.io/tarball/master" class="tar">tar</a><a href="https://github.com/soberstadt/soberstadt.github.io/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
-    <p class="name"></p>
-  </div>
+    <div style="display:none" id="ARProject" class="project_large">
+      <h2>Mobile Enviornment Detection</h2>
+      <img src="pics/port/fattDesign.jpg">
+      <p>As many medical conditions can inhibit cognitive abilities, the Mobile 
+        Environment Detection project was designed to help people who struggle in
+        new environments turn that space into a learning atmosphere. In different 
+        locations, facilitators could "capture" items or locations in the space 
+        and provide descriptions on whenever was relevant. My role on the project 
+        was to do the interface design and begin the groundwork for implementing 
+        an Augmented Reality engine.</p>
+      <div class="container_12 more_info">
+        <div class="tags grid_3">
+          <h4>Tags</h4>
+          <ul>
+            <li>Flex</li>
+            <li>Adobe AIR Mobile</li>
+            <li>UI Design</li>
+          </ul>
+        </div>
+        <div class="grid_3">
+          <h4>Client</h4>
+          <p>University of Wisconsin - Stevens Point</p>
+        </div>
+        <div class="grid_3">
+          <h4>Time Frame</h4>
+          <p>November 2011 - December 2011</p>
+        </div>
+        <div class="grid_3">
+          <h4>Coolness</h4>
+          <p>5</p>
+        </div>
+      </div> 
+    </div>
 
-            <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-6831251-2");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+    <div style="display:none" id="autismProject" class="project_large">
+      <h2>Smart Data Entry App for Autism Therapy</h2>
+      <img src="pics/port/dataEntryApp.jpg">
+      <p>Extensive records are common in home therapy for a child with autism. 
+        Line therapists are given a list of assigned program items (things for 
+        the child to work on learning) and begins the process of continually 
+        practicing that item until success regularity increases. This process 
+        while providing good structure, was slow to adapt and did not allow for 
+        use of the testing data after 2 weeks. Out of these problems rose the 
+        Smart Data Entry App for Autism Therapy, where instead of having to write 
+        each time you complete a trail with the child, you can enter that into a 
+        tablet, where that data can be accessed in real time by a senior 
+        therapist and can be utilized later in therapy to show things like 
+        changes in acquisition speed.</p>
 
-</body>
+      <p>This app was built as a suite of tools (Mobile Enhanced Autism Therapy) 
+        built to further different areas in the autism therapy field.</p>
+      <div class="container_12 more_info">
+        <div class="tags grid_3">
+          <h4>Tags</h4>
+          <ul>
+            <li>Java</li>
+            <li>Android</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+            <li>Git</li>
+            <li>JSON</li>
+          </ul>
+        </div>
+        <div class="grid_3">
+          <h4>Client</h4>
+          <p>University of Wisconsin - Stevens Point</p>
+        </div>
+        <div class="grid_3">
+          <h4>Time Frame</h4>
+          <p>July 2011 - November 2011</p>
+        </div>
+        <div class="grid_3">
+          <h4>Coolness</h4>
+          <p>8</p>
+        </div>
+      </div> 
+    </div>
+
+    <div style="display:none" id="p2large" class="project_large">
+      <h2>MPDX - Mobile</h2>
+      <a href="http://fancybox.net/blog">Example Light box</a>  
+    </div>
+
+    <script type="text/javascript" src="js/soberstadt.min.js"></script>
+    <script type="text/javascript" src="https://github.com/fryn/html5slider/raw/master/html5slider.js"></script>
+  </body>
 </html>
