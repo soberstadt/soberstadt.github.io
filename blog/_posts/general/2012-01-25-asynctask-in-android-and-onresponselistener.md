@@ -1,5 +1,5 @@
 ---
-title: Asynctask in Android and onCompleteListener
+title: Asynctask in Android and onResponseListener
 author: Spencer
 layout: post
 permalink: /asynctask-in-android-and-oncompletelistener/
@@ -12,7 +12,7 @@ tags:
   - example
   - HTTP Request
   - Java
-  - onCompleteListener
+  - onResponseListener
 ---
 From time to time you only need to do a simple HTTP request for various reasons(login, vote submitting, simple server requests, ect) in a Android project. A lot of times this can be over complicated by writing a AsyncTask for every different type of request, but I have a simple class here that should help you understand AsyncTasks in Java as well as save some time.
 
