@@ -17,7 +17,7 @@ author :
   twitter : soberstadt
   googleplus : 114754196444501299267
   # feedburner : feedname
-theme: hooligan
+theme: minima
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
